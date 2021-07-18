@@ -9,7 +9,6 @@ public abstract class AbstractExtension {
         this.extensionName = extensionName;
     }
     public abstract boolean check(RandomAccessFile file) throws IOException;
-
     public String getExtensionName() {
         return extensionName;
     }
