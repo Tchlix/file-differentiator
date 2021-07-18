@@ -13,8 +13,11 @@ public class ExtensionChecker {
             new SingleMagicExtension(".jpg","ffd8ff",  0),
             new SingleMagicExtension(".jpg","FFD8FFE000104A4649460001",  0),
             new SingleMagicExtension(".jpg","FFD8FFEE",  0),
+            new SingleMagicExtension(".iso","4344303031", 0x8001),
             new DoubleMagicExtension(".jpg","FFD8FFE1","457869660000",2),
             new DoubleMagicExtension(".wav","52494646","57415645",4),
+            new DoubleMagicExtension(".avi","52494646","41564920",4),
+
             new txtExtension(),
     };
 
