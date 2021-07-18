@@ -7,6 +7,10 @@ public class FileDifferentiator {
 
     private final ExtensionChecker checker = new ExtensionChecker();
 
+    public void start(String filePath){
+        differentiate(filePath);
+    }
+
     public void start(String[] filePaths){
         for(String filePath : filePaths)
             differentiate(filePath);
