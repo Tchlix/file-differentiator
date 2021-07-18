@@ -11,6 +11,7 @@ public class txtExtension extends AbstractExtension{
 
     @Override
     public boolean check(RandomAccessFile file) throws IOException {
+        //We check first 8000 bytes for null, if null exist it's not a txt
         file.seek(0);
         int length = (int) Long.min(file.length(),8000);
         byte[] data = new byte[length];

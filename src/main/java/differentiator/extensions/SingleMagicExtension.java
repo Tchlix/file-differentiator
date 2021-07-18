@@ -20,6 +20,7 @@ public class SingleMagicExtension extends AbstractExtension{
         file.seek(offset);
         byte[] data = new byte[magicLength];
         file.read(data,0, magicLength);
+        //Bytes to hex string conversion
         StringBuilder builder = new StringBuilder();
         for(byte x : data){
             builder.append(String.format("%02x",x));

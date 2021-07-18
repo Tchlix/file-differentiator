@@ -41,7 +41,7 @@ public class FileDifferentiator {
             System.out.println("Couldn't open " + filePath);
         }
         catch (IllegalArgumentException e){
-            System.out.println(filePath+" "+e.getMessage());
+            System.out.println(filePath + " " + e.getMessage());
         }
         catch (IOException e) {
             System.out.println(e.getMessage());
